@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{BUSINESS_NAME}} | Contractor</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; color: #2c2c2c; background: #fff; }
+    nav { background: #1b3a6b; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; }
+    nav .logo { color: #f4a223; font-size: 1.5rem; font-weight: bold; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul li a { color: #fff; text-decoration: none; font-size: 0.95rem; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80') center/cover no-repeat; height: 88vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; }
+    .hero h1 { font-size: 3rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
+    .hero p { font-size: 1.2rem; margin-top: 12px; color: #f4a223; }
+    .hero a { margin-top: 28px; padding: 14px 36px; background: #f4a223; color: #1b3a6b; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 1rem; }
+    .section { padding: 70px 40px; max-width: 1100px; margin: auto; text-align: center; }
+    .section h2 { font-size: 2rem; margin-bottom: 15px; color: #1b3a6b; }
+    .section p { font-size: 1.05rem; color: #555; line-height: 1.8; max-width: 700px; margin: auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 40px; }
+    .service-card { background: #f5f8ff; border-left: 4px solid #f4a223; padding: 25px; border-radius: 6px; text-align: left; }
+    .service-card h3 { font-size: 1.15rem; color: #1b3a6b; margin-bottom: 10px; }
+    .service-card p { font-size: 0.95rem; color: #555; }
+    .why { background: #1b3a6b; color: white; padding: 70px 40px; text-align: center; }
+    .why h2 { font-size: 2rem; margin-bottom: 30px; color: #f4a223; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; max-width: 900px; margin: auto; }
+    .why-item { background: #24508a; padding: 25px; border-radius: 8px; }
+    .why-item h4 { color: #f4a223; margin-bottom: 8px; font-size: 1.1rem; }
+    .why-item p { font-size: 0.9rem; color: #ccc; }
+    .contact { padding: 70px 40px; background: #f5f8ff; text-align: center; }
+    .contact h2 { font-size: 2rem; margin-bottom: 20px; color: #1b3a6b; }
+    .contact p { font-size: 1.1rem; color: #555; margin-bottom: 10px; }
+    .contact a { color: #f4a223; font-weight: bold; text-decoration: none; font-size: 1.3rem; }
+    footer { background: #1b3a6b; color: #aaa; text-align: center; padding: 20px; font-size: 0.85rem; }
+    footer span { color: #f4a223; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">{{BUSINESS_NAME}}</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>{{BUSINESS_NAME}}</h1>
+    <p>Licensed & Insured · Serving {{CITY}}, TX & Surrounding Areas</p>
+    <a href="#contact">Get a Free Quote</a>
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <p>Professional, reliable work done right the first time. We serve residential and commercial clients across the {{CITY}} area.</p>
+    <div class="services-grid">
+      <div class="service-card"><h3>🔧 Repairs</h3><p>Fast, reliable repairs for any job big or small.</p></div>
+      <div class="service-card"><h3>🏗️ New Construction</h3><p>Quality builds from the ground up.</p></div>
+      <div class="service-card"><h3>🏠 Renovations</h3><p>Transform your space with our expert team.</p></div>
+      <div class="service-card"><h3>🔍 Inspections</h3><p>Thorough assessments before you buy or sell.</p></div>
+    </div>
+  </div>
+
+  <div class="why" id="why">
+    <h2>Why Choose Us</h2>
+    <div class="why-grid">
+      <div class="why-item"><h4>✅ Licensed & Insured</h4><p>Fully certified for your protection.</p></div>
+      <div class="why-item"><h4>⚡ Fast Response</h4><p>Same-day estimates available.</p></div>
+      <div class="why-item"><h4>💰 Fair Pricing</h4><p>No hidden fees, ever.</p></div>
+      <div class="why-item"><h4>⭐ 5-Star Work</h4><p>Hundreds of satisfied customers.</p></div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <h2>Get Your Free Quote Today</h2>
+    <p>📍 Serving {{CITY}}, TX & surrounding areas</p>
+    <p>📞 <a href="tel:{{PHONE}}">{{PHONE}}</a></p>
+    <p>Call or text us — we respond fast.</p>
+  </div>
+
+  <footer>
+    <p>© 2026 {{BUSINESS_NAME}} · Website by <span>JF Web Studios</span></p>
+  </footer>
+</body>
+</html>
