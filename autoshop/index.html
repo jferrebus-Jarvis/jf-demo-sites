@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{BUSINESS_NAME}} | Auto Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; color: #2c2c2c; background: #fff; }
+    nav { background: #111; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; }
+    nav .logo { color: #e63312; font-size: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul li a { color: #fff; text-decoration: none; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1486006920555-c77dcf18193c?w=1400&q=80') center/cover no-repeat; height: 88vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; }
+    .hero h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 4px; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); }
+    .hero p { font-size: 1.2rem; margin-top: 12px; color: #e63312; text-transform: uppercase; letter-spacing: 2px; }
+    .hero a { margin-top: 28px; padding: 14px 36px; background: #e63312; color: white; text-decoration: none; font-weight: bold; border-radius: 3px; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+    .section { padding: 70px 40px; max-width: 1100px; margin: auto; text-align: center; }
+    .section h2 { font-size: 2rem; margin-bottom: 15px; color: #111; }
+    .section p { font-size: 1.05rem; color: #555; line-height: 1.8; max-width: 700px; margin: auto; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 40px; }
+    .service-card { background: #f8f8f8; border-top: 4px solid #e63312; padding: 25px; border-radius: 6px; text-align: center; }
+    .service-card .icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .service-card h3 { font-size: 1.1rem; color: #111; margin-bottom: 8px; }
+    .service-card p { font-size: 0.9rem; color: #666; }
+    .cta { background: #e63312; color: white; padding: 70px 40px; text-align: center; }
+    .cta h2 { font-size: 2.2rem; margin-bottom: 15px; }
+    .cta p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; }
+    .cta a { padding: 16px 40px; background: white; color: #e63312; font-weight: bold; text-decoration: none; border-radius: 4px; font-size: 1.1rem; }
+    .contact { padding: 70px 40px; text-align: center; }
+    .contact h2 { font-size: 2rem; margin-bottom: 20px; color: #111; }
+    .contact p { font-size: 1.1rem; color: #555; margin-bottom: 10px; }
+    .contact a { color: #e63312; font-weight: bold; text-decoration: none; font-size: 1.3rem; }
+    footer { background: #111; color: #666; text-align: center; padding: 20px; font-size: 0.85rem; }
+    footer span { color: #e63312; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">{{BUSINESS_NAME}}</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>{{BUSINESS_NAME}}</h1>
+    <p>Trusted Auto Repair · {{CITY}}, TX</p>
+    <a href="#contact">Book an Appointment</a>
+  </div>
+
+  <div class="section" id="services">
+    <h2>What We Do</h2>
+    <p>From oil changes to full engine work — we keep your car running right. Honest service, fair prices, done right the first time.</p>
+    <div class="services-grid">
+      <div class="service-card"><div class="icon">🔧</div><h3>Oil Change</h3><p>Quick, clean, and thorough every time.</p></div>
+      <div class="service-card"><div class="icon">🛞</div><h3>Tires & Brakes</h3><p>Safety first — we check everything.</p></div>
+      <div class="service-card"><div class="icon">⚙️</div><h3>Engine & Transmission</h3><p>Full diagnostics and repair.</p></div>
+      <div class="service-card"><div class="icon">❄️</div><h3>AC & Heating</h3><p>Stay comfortable year round.</p></div>
+      <div class="service-card"><div class="icon">🔋</div><h3>Battery & Electrical</h3><p>We diagnose and fix electrical issues fast.</p></div>
+      <div class="service-card"><div class="icon">🔍</div><h3>Free Inspection</h3><p>Bring it in — we'll tell you what's needed.</p></div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Need Your Car Fixed Fast?</h2>
+    <p>We offer same-day service on most repairs. Call us now.</p>
+    <a href="tel:{{PHONE}}">📞 Call {{PHONE}}</a>
+  </div>
+
+  <div class="contact" id="contact">
+    <h2>Find Us</h2>
+    <p>📍 {{ADDRESS}}, {{CITY}}, TX</p>
+    <p>📞 <a href="tel:{{PHONE}}">{{PHONE}}</a></p>
+    <p>Mon–Fri: 8AM–6PM &nbsp;|&nbsp; Sat: 9AM–4PM</p>
+  </div>
+
+  <footer>
+    <p>© 2026 {{BUSINESS_NAME}} · Website by <span>JF Web Studios</span></p>
+  </footer>
+</body>
+</html>
